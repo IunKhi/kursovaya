@@ -73,7 +73,7 @@ public:
     // Удаление элемента из стека и его вывод на экран
     int pop() {
         if (isEmpty()) {
-            std::cout << "stack is empty" << std::endl;
+            std::cout << "Стек удален" << std::endl;
             return 0;
         }
         int value = top->key;
@@ -93,7 +93,7 @@ public:
 
     // Вывод информации о длине стека
     void printLength() {
-        std::cout << "Stack length: " << size << std::endl;
+        std::cout << "Длина стека: " << size << std::endl;
     }
 
     // Вывод стека в терминал
