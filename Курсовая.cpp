@@ -151,7 +151,7 @@ int main() {
         }
         case 6: {
             Stack newStack; 
-            myStack.copy(newStack); 
+            stack.copy(newStack); 
             std::cout << "Новый стек создан." << std::endl;
             break;
         }   
