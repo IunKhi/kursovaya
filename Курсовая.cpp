@@ -118,7 +118,8 @@ int main() {
         std::cout << "3. Удалить весь стек\n";
         std::cout << "4. Вывести длину стека\n";
         std::cout << "5. Вывести стек\n";
-        std::cout << "6. Выйти\n";
+        std::cout << "6. Копировать стек\n";
+        std::cout << "7. Выйти\n";
         std::cout << "Выберите операцию: ";
         std::cin >> choice;
 
@@ -149,6 +150,12 @@ int main() {
             break;
         }
         case 6: {
+            Stack newStack; 
+            myStack.copy(newStack); 
+            std::cout << "Новый стек создан." << std::endl;
+            break;
+        }   
+        case 7: {
             std::cout << "Выход..." << std::endl;
             break;
         }
